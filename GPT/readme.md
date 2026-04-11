@@ -22,4 +22,4 @@ The implementation is pre-trained using the **TinyStories** dataset, focusing on
 - [Vizuara](https://youtube.com/playlist?list=PLPTV0NXA_ZShuk6u31pgjHjFO2eS9p5EV&si=mkcCv-8Rk-LZtZr2)
 
 ### Architecture Diagram
-![GPT Architecture](https://jalammar.github.io/images/gpt2/gpt2-transformerblock-2.png)
+![GPT Architecture](https://sebastianraschka.com/llm-architecture-gallery/images/architectures/gpt-2-xl.webp)

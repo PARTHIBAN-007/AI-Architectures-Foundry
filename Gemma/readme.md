@@ -21,10 +21,10 @@ Gemma 3 utilizes a decoder-only transformer architecture with a hybrid interleav
 
 ### Training Dataset
 The model is trained on the **TinyStories** dataset from Hugging Face (`roneneldan/TinyStories`), which provides synthetic stories for training high-quality small-scale narrative models.
-
+## Model Weights and Training Data: [HuggingFace Repo](https://huggingface.co/Parthiban007/Gemma_3_270M/tree/main)
 
 ### Reference
 - [Vizuara](https://youtu.be/bLDlwcl6hbA?si=IJfos5UoD-mF2dvI)
 
 ### Architecture Diagram
-![Gemma Architecture](https://storage.googleapis.com/gweb-uniblog-publish-prod/images/Gemma_2_Hero_1.max-1000x1000.png)
+![Gemma Architecture](https://sebastianraschka.com/llm-architecture-gallery/images/architectures/gemma-3-270m.webp)
