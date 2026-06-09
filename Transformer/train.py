@@ -24,10 +24,10 @@ max_src_len = 512
 max_tgt_len = 512
 learn_pos_embed = False
 
-tgt_tokenizer = FrenchTokenizer("trained_tokenizer/french_wp.sjon")
-src_tokenizer = AutoTokenizer.from_pretrained("googlge-bert/bert-base-uncased")
+tgt_tokenizer = FrenchTokenizer("trained_tokenizer/french_wp.json")
+src_tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
 
-path_to_data = ""
+path_to_data = "english2french/tokenized_french2english_corpus/"
 batch_size = 128
 gradient_accumulation_steps = 2
 num_workers  = 16

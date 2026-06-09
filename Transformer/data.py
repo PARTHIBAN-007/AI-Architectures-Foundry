@@ -1,7 +1,7 @@
 import pandas as pd
 import torch
 from torch.utils.data import DataLoader
-from tokenizers import FrenchTokenier
+from tokenizer import FrenchTokenizer
 from transformers import AutoTokenizer
 from model import TransformerConfig
 from datasets import load_from_disk
@@ -35,13 +35,12 @@ def TranslationCollator(src_tokenizer,tgt_tokenizer):
     return _collate_fn
 
 if __name__=="__main__":
-    path_to_data = ""
-    path_to_vocab = ""
+    path_to_vocab = "trained_tokenizer/sentencepiece_tokenizer.json"
 
     tgt_tokenier = FrenchTokenier("trained_tokenizer/french_wp.json")
     src_tokenizer = AutoTokenizer.from_pretrained("google-bert/bert-base-uncased")
 
-    path_to_data = ""
+    path_to_data = "AI-Architectures-Foundry/Transformer/english2french/tokenized_french2english_corpus"
     dataset = load_from_disk(path_to_data)
 
     collate_fn = TranslationCollator(src_tokenizer,tgt_tokenier)
